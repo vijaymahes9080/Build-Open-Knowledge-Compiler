@@ -1,0 +1,7 @@
+1:"$Sreact.fragment"
+2:I[75283,["/Build-Open-Knowledge-Compiler/_next/static/chunks/05-c3ty_6dwfk.js","/Build-Open-Knowledge-Compiler/_next/static/chunks/14mrh2-p_w84d.js","/Build-Open-Knowledge-Compiler/_next/static/chunks/0uukdajwosw7d.js","/Build-Open-Knowledge-Compiler/_next/static/chunks/3h1-z5n688h-2.js"],"default"]
+3:I[97367,["/Build-Open-Knowledge-Compiler/_next/static/chunks/05-c3ty_6dwfk.js","/Build-Open-Knowledge-Compiler/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+:HL["/Build-Open-Knowledge-Compiler/_next/static/chunks/3mpe2jejel0v2.css","style"]
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{}],[["$","link","0",{"rel":"stylesheet","href":"/Build-Open-Knowledge-Compiler/_next/static/chunks/3mpe2jejel0v2.css","precedence":"next"}],["$","script","script-0",{"src":"/Build-Open-Knowledge-Compiler/_next/static/chunks/0uukdajwosw7d.js","async":true}],["$","script","script-1",{"src":"/Build-Open-Knowledge-Compiler/_next/static/chunks/3h1-z5n688h-2.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"wHraUtoJAjABQ-WsnQDdC"}
+5:null
