@@ -24,6 +24,7 @@ Open Knowledge Compiler is an open-source, privacy-first learning platform that 
 | 🤖 **AI Tutor** | 5 persona modes — Teacher, Mentor, Research Guide, Code Reviewer, Exam Trainer |
 | 🃏 **Spaced Repetition Flashcards** | SM-2 algorithm flashcards for active recall revision |
 | 📊 **Learning Progress Tracker** | Persistent per-element completion and quiz score tracking |
+| 🎙️ **Interactive AI Podcast** | Dialogues synthesized 100% offline with host and expert. Interrupt to ask questions dynamically! |
 
 ---
 
@@ -53,6 +54,7 @@ graph TD
         Workspace --> Sandbox[🖥️ Code Sandbox]
         Workspace --> Tutor[🤖 AI Tutor]
         Workspace --> Flashcards[🃏 Flashcards]
+        Workspace --> Podcast[🎙️ AI Podcast]
     end
 
     VectorStore --> Tutor
