@@ -11,9 +11,10 @@ import TutorPanel from "@/components/TutorPanel";
 import SimulatorPanel from "@/components/SimulatorPanel";
 import QuizWidget from "@/components/QuizWidget";
 import SlideDeck from "@/components/SlideDeck";
+import PodcastPanel from "@/components/PodcastPanel";
 
 type LeftTab = "book" | "slides" | "quiz" | "simulator";
-type RightTab = "graph" | "tutor" | "timeline";
+type RightTab = "graph" | "tutor" | "timeline" | "podcast";
 
 export default function Workspace() {
   const { id } = useParams() as { id: string };
@@ -176,7 +177,7 @@ export default function Workspace() {
         >
           {/* Tab selectors */}
           <div className="h-10 bg-slate-950 border-b border-gray-800 flex items-center px-4 space-x-1 shrink-0 select-none">
-            {(["graph", "tutor", "timeline"] as RightTab[]).map((tab) => (
+            {(["graph", "tutor", "timeline", "podcast"] as RightTab[]).map((tab) => (
               <button
                 key={tab}
                 onClick={() => setRightTab(tab)}
@@ -186,7 +187,7 @@ export default function Workspace() {
                     : "text-gray-400 hover:text-gray-200 hover:bg-gray-900"
                 }`}
               >
-                {tab === "graph" ? "🕸 Concept Graph" : tab === "tutor" ? "🤖 AI Tutor Guide" : "⏳ Event Timeline"}
+                {tab === "graph" ? "🕸 Concept Graph" : tab === "tutor" ? "🤖 AI Tutor Guide" : tab === "timeline" ? "⏳ Event Timeline" : "🎙️ AI Podcast"}
               </button>
             ))}
           </div>
@@ -205,6 +206,9 @@ export default function Workspace() {
                 packageId={data.metadata.id}
                 selectedTopic={selectedTopic}
               />
+            )}
+            {rightTab === "podcast" && (
+              <PodcastPanel packageData={data} />
             )}
             {rightTab === "timeline" && (
               <div className="p-6 space-y-6">
