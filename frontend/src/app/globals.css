@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #0b0f19;
+    color: #f3f4f6;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  }
+}
+
+/* Custom Premium Glassmorphism Card Style */
+.glass-panel {
+  background: rgba(17, 24, 39, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border-radius: 12px;
+}
+
+/* Glowing Border Effect */
+.glow-border {
+  position: relative;
+}
+.glow-border::after {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6, #3b82f6);
+  border-radius: inherit;
+  z-index: -1;
+  opacity: 0.15;
+  filter: blur(4px);
+  transition: opacity 0.3s;
+}
+.glow-border:hover::after {
+  opacity: 0.3;
+}
+
+/* Custom Scrollbar for Workspace Panels */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(17, 24, 39, 0.5);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(59, 130, 246, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(59, 130, 246, 0.6);
+}
+
+/* React Flow customizations */
+.react-flow__node {
+  background: #111827 !important;
+  color: #fff !important;
+  border: 1px solid #1f2937 !important;
+  border-radius: 8px !important;
+  padding: 10px !important;
+  font-family: system-ui, sans-serif;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.react-flow__node-topic {
+  border-color: #3b82f6 !important;
+}
+.react-flow__edge-path {
+  stroke: #4b5563 !important;
+  stroke-width: 2px !important;
+}
+.react-flow__controls {
+  background: #1f2937 !important;
+  border: 1px solid #374151 !important;
+}
+.react-flow__controls-button {
+  background: #111827 !important;
+  border-bottom: 1px solid #374151 !important;
+  fill: #fff !important;
+}
+.react-flow__controls-button:hover {
+  background: #1f2937 !important;
+}
+.react-flow__minimap {
+  background: #111827 !important;
+  border: 1px solid #374151 !important;
+  border-radius: 8px !important;
+}
