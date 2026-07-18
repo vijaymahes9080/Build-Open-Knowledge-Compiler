@@ -1,0 +1,12 @@
+{
+    "name": "vijaymahes/build-open-knowledge-compiler",
+    "description": "Open Knowledge Compiler (OKC) - Transform any learning material into a structured learning environment",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Vijay Mahes",
+            "email": "Vijaypradhap2004@gmail.com"
+        }
+    ],
+    "require": {}
+}
