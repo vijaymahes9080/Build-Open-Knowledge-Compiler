@@ -2,6 +2,10 @@
 
 > **Transform any learning material into a fully structured, interactive knowledge environment — entirely offline, powered by local AI.**
 
+<p align="center">
+  <img src="assets/hero_illustration.png" alt="Open Knowledge Compiler Hero Illustration" width="650" />
+</p>
+
 Open Knowledge Compiler is an open-source, privacy-first learning platform that ingests raw documents (PDFs, DOCX, URLs) and compiles them into **`.okc` containers** — self-contained, portable learning environments packed with auto-generated courses, books, slide decks, quizzes, mind maps, knowledge graphs, code sandboxes, and an AI tutor — all without sending a single byte to the cloud.
 
 ---
@@ -59,6 +63,14 @@ graph TD
 
     VectorStore --> Tutor
 ```
+
+---
+
+## 🖥️ Workspace Preview
+
+<p align="center">
+  <img src="assets/ui_mockup.png" alt="Open Knowledge Compiler Workspace Mockup" width="750" />
+</p>
 
 ---
 
